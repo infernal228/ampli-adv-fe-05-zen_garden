@@ -1,0 +1,96 @@
+@import "style.css";
+
+header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    225deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  color: #000000;
+  border-radius: 10px 10px 0px 0px;
+  height: 300px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  padding: 20px 0px 10px 20px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  padding: 10px 0px 20px 20px;
+}
+
+.summary {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    315deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  color: #000000;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  height: 300px;
+  a {
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 8px;
+    font-weight: 600;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #000000;
+    }
+    &:before {
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0s;
+    }
+    &:after {
+      opacity: 0;
+      transform: translateY(8px/2);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.2s;
+    }
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:before {
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          opacity 0.2s;
+      }
+      &:after {
+        transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+          opacity 0s 0.2s;
+      }
+    }
+  }
+}
+
+.summary p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.summary a:link {
+  color: black;
+}

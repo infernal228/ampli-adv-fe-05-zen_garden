@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;Playfair+Display:wght@600;Montserrat:wght@600;700&family=Indie+Flower&family=Raleway:wght@400;600&family=Satisfy&display=swap");
+@import "header";
+@import "main";
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Satisfy', cursive;
+//font-family: 'Montserrat', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  color: #555753;
+  background: black no-repeat fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
